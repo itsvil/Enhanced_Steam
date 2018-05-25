@@ -2981,7 +2981,7 @@ function wishlist_highlight_apps() {
 	if (is_signed_in) {
 		var log_in_image = $("#global_actions").find("img:last").attr("src");
 		var user_image = $(".wishlist_header").find("img:first").attr("src").replace("_full", "");
-
+		console.log('test');
 		if (log_in_image != user_image) {
 			storage.get(function(settings) {
 				$.when.apply($, [dynamicstore_promise, get_store_session]).done(function(data, store_sessionid) {
